@@ -9,9 +9,9 @@ data2 = 3,50
 data3 = "MArlon L."
 data4 = 'Lopes'
 data5 = '''
-Hello people, we are learning Python.
-That's wonderful.
-'''
+            Hello people, we are learning Python.
+            That's wonderful.
+        '''
 data6 = True
 data7 = 3.4
 
