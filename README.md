@@ -148,7 +148,7 @@ Puedes contribuir creando ejercicios, corrigiendo errores o sugiriendo nuevos te
 
 ## 📬 Contacto
 
-📧 Autor: [TuNombre]  
+📧 Autor: [Marlon Jeshit Lopes Armero]  
 🐙 GitHub: [https://github.com/TuUsuario](https://github.com/TuUsuario)
 
 ---
