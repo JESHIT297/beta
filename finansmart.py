@@ -1,55 +1,53 @@
 from random import randint
 
-# Constantes
-INGRESO_MIN = 1_000_000
-INGRESO_MAX = 8_000_000
-CANTIDAD_CLIENTES = 5
+# Constants
+INCOME_MIN = 1_000_000
+INCOME_MAX = 8_000_000
+NUMBER_CLIENTS = 5
 
-# Lista para guardar los clientes
-clientes = []
+# List to save clients
+clients = []
 
-# Repetir 5 veces para registrar 5 clientes
-for i in range(CANTIDAD_CLIENTES):
-    print(f"\n=== Ingreso de datos para cliente {i+1} ===")
+for i in range(NUMBER_CLIENTS):
+    print(f"\n=== Data entry for client {i+1} ===")
 
-    nombre = input("Nombre completo: ")
-    identificacion = input("Número de identificación: ")
-    edad = int(input("Edad: "))
-    gasto = float(input("Gasto mensual: "))
-    telefono = input("Teléfono: ")
-    direccion = input("Dirección: ")
-    estado = True  # Estado predeterminado
+    full_name = input("Full name : ")
+    id_number = input("ID number: ")
+    age = int(input("Age: "))
+    monthly_expenses =float(input("Monthly expenses: "))
+    mobile_phone = input("Mobile phone: ")
+    address = input("Address: ")
+    client_status = True  # Default state
 
-    ingreso = randint(INGRESO_MIN, INGRESO_MAX)
-    balance = ingreso - gasto
+    monthly_income = randint(INCOME_MIN, INCOME_MAX)
+    balance = monthly_income - monthly_expenses
 
-    # Guardar todos los datos del cliente en un diccionario
-    cliente = {
-        "Nombre": nombre,
-        "ID": identificacion,
-        "Edad": edad,
-        "Gasto": gasto,
-        "Teléfono": telefono,
-        "Dirección": direccion,
-        "Estado": estado,
-        "Ingreso": ingreso,
+    client = {
+        "Full name": full_name,
+        "ID number": id_number,
+        "Age": age,
+        "Monthly expenses":monthly_expenses,
+        "Mobile phone": mobile_phone,
+        "Address": address,
+        "Client status": client_status,
+        "Monthly income": monthly_income,
         "Balance": balance
     }
 
-    # Agregar el cliente a la lista
-    clientes.append(cliente)
+    # Add the client to the list
+    clients.append(client)
 
-# Mostrar todos los clientes
-print("\n=== REPORTE DE TODOS LOS CLIENTES ===")
+# Show all clients
+print("\n=== REPORT OF ALL CLIENTS ===")
 
-for idx, cliente in enumerate(clientes, start=1):
-    print(f"\n--- Cliente {idx} ---")
-    print(f"Nombre: {cliente['Nombre']}")
-    print(f"ID: {cliente['ID']}")
-    print(f"Edad: {cliente['Edad']}")
-    print(f"Teléfono: {cliente['Teléfono']}")
-    print(f"Dirección: {cliente['Dirección']}")
-    print(f"Estado: {cliente['Estado']}")
-    print(f"Ingreso: ${cliente['Ingreso']:,.0f}")
-    print(f"Gasto: ${cliente['Gasto']:,.0f}")
-    print(f"Balance: ${cliente['Balance']:,.0f}")
+for idx, client in enumerate(clients, start=1):
+    print(f"\n--- client {idx} ---")
+    print(f"Full name: {client['Full name']}")
+    print(f"ID number: {client['ID number']}")
+    print(f"Age: {client['Age']}")
+    print(f"Monthly expenses: ${client['Monthly expenses']:,.0f}")
+    print(f"Mobile phone: {client['Mobile phone']}")
+    print(f"Address: {client['Address']}")
+    print(f"Client status: {client['Client status']}")
+    print(f"Monthly income: ${client['Monthly income']:,.0f}")
+    print(f"Balance: ${client['Balance']:,.0f}")
