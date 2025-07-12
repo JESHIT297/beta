@@ -12,4 +12,4 @@ def get_dices():
         print("YOU WIN")
     else:
         print("YOU LOSE")
-get_dices()
+get_dices() 
